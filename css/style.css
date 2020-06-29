@@ -1,88 +1,108 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-
-  h1 {
-    margin-bottom: 15 px;
-    font-size: 175%;
-    text-align: center;
-  } 
-
-  section {
-    border: 1px solid black;
-    margin:10px;
-    background-size: cover;
-    height: 221px;
-  }
-
-  section > h5 {
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    margin: 0;
-    float: right;
-    padding-left: 5px;
-    padding-right:5px;
-    padding-top:2px;
-    padding-bottom:2px;
-    font-size: 125%;
-    font-style: italic;
-    color: black;
-  }
-  section > p {
-    
-    width: 90%;
-    margin-right: auto;
-    margin-left:auto;
-    padding: 25px 10px 10px 10px;
-    color: white;
-  }
-  body > div > div:nth-child(1) > div > section > h5 {
+body {
+  font-size: 16px;
   background-color: white;
-  }
-  body > div > div:nth-child(2) > div > section > h5 {
-  background-color: gold
-  }
-  body > div > div:nth-child(3) > div > section > h5 {
-  background-color: gray;
-  }
-  body > div > div:nth-child(1) > div > section {
-    background-color: blue;
-  }
-  body > div > div:nth-child(2) > div > section {
-  background-color: brown;
-  }
-  body > div > div:nth-child(3) > div > section {
-  background-color: green;
-  }
-  .row {
-    width: 100%
-  }
-  /* Desktops */
-  @media (min-width: 992px) {
-    .col-lg-4, .col-lg-8, .col-lg-12 {
-      float: left;
-    }
-    .col-lg-4 {
-      width: 33.33%;
-    }
-    .col-lg-8 {
-      width: 66.66%;;
-    }
-    .col-lg-12 {
-      width: 100%
-    }
-  }
+  font-family: 'Tahoma', sans-serif;
+}
 
-  /* Tablets */
-  @media (min-width: 768px) and (max-width: 991px) {
-    .col-md-6, .col-md-12 {
-      float: left;
-    }
-    .col-md-6 {
-      width: 50%;
-    }
-    .col-md-12 {
-      width: 100%
-    }
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  border-radius: 0;
+  border: 1px solid;
+}
+
+.navbar-brand {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.navbar-brand h1 { /* Company Name */
+  font-family: 'Tahoma', sans-serif, solid;
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .02;
+  text-decoration: none;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+  border: 1px solid;
+}
+
+#nav-list {
+  margin-top: 0px;
+  background-color: gray;
+  margin-bottom: 0;
+}  
+#nav-list a {
+  color: solid;
+  font-size: 115%;
+  color: white;
+  text-align: center;
+  border: 1px black solid;
+}
+#nav-list a:hover {
+  background: white;/*yellow: rollover color*/
+  color: black;
+  border: 1px solid;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle.icon-bar {
+  clear: both;
+  background-color: #ccffff;
+  margin-top: -40px;
+}
+/* END HEADER */
+
+/* TILES */
+h2{
+  font-size: 2.4em;
+  font-weight: bold;
+  text-align: center;
+}
+#main-content {
+  width: 90%;
+ 
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  background-color: #ccffff;
+  border: 4px solid black;
+}
+#menu-category {
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  color: darkblue;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container
+  }
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  #collapsable-nav a {
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span {
+    font-size: 1em;
+    margin-right: 5px;
   }
